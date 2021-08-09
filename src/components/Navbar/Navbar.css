@@ -1,0 +1,234 @@
+/* appbar css */
+.AppBar{
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #0F52BA !important;
+    position: static;
+    width: 100%;
+    display: flex;
+    z-index: 1100;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+/* toolbar media */
+
+@media (min-width: 600px){
+    .MuiToolbar-regular {
+        min-height: 64px;
+    }
+}
+
+@media (min-width: 0px) and (orientation: landscape){
+    .MuiToolbar-regular {
+        min-height: 48px;
+    }
+}
+
+.MuiToolbar-regular {
+    min-height: 56px;
+}
+@media (min-width: 600px){
+.MuiToolbar-gutters {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+}
+
+
+.MuiToolbar-gutters {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.MuiToolbar-root {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+/* mobile css */
+
+@media only screen and (min-width: 600px){
+    .mobileDisplay {
+        display: none;
+    }
+}
+
+.mobileDisplay {
+    display: block;
+}
+/* button css */
+
+.MuiIconButton-colorInherit {
+    color: inherit;
+}
+
+
+.MuiIconButton-edgeStart {
+    margin-left: -12px;
+}
+.MuiIconButton-root {
+    flex: 0 0 auto;
+    color: rgba(0, 0, 0, 0.54);
+    padding: 12px;
+    overflow: visible;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 50%;
+}
+/* for all buttons */
+
+.MuiButtonBase-root {
+    color: inherit;
+    border: 0;
+    cursor: pointer;
+    margin: 0;
+    display: inline-flex;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    user-select: none;
+    border-radius: 0;
+    vertical-align: middle;
+    -moz-appearance: none;
+    justify-content: center;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* icon css */
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+
+/* heading css */
+.title {
+    
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    flex-grow: 1;
+}
+
+h6 {
+    font-size: 1.25rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+}
+
+/* desktop css */
+
+@media only screen and (min-width: 600px){
+    .desktopDisplay {
+        display: block;
+    }
+}
+
+.desktopDisplay {
+    display: none;
+}
+
+/* navsbutton css */
+
+
+.MuiButton-text {
+    padding: 6px 8px !important;
+}
+
+.MuiButton-root {
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+}
+.active {
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.MuiButton-label {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: space-evenly;
+}
+
+/* drawer css */
+
+
+@media only screen and (min-width: 600px)
+{
+    .drawer {
+        width: 50vw;
+    }
+}
+
+.drawer {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: left 0.3s;
+}
+.drawer .closeButton {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* hr css */
+
+.MuiDivider-root {
+    border: none;
+    height: 1px;
+    margin: 0;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.drawer .drawerItems {
+    padding: 0 20px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.drawer .drawerItems ul {
+    list-style: none;
+    width: 80%;
+}
+
+.drawer .drawerItems ul li {
+    font-size: 22px;
+    padding: 20px 0;
+}
